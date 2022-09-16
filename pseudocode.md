@@ -11,11 +11,13 @@ I will need to create a blue timer box.
 I will need to create a start button with gradient effect.
 I will need to create a blue background header at the top of the screen.
 i will need to create a blue gradient background.
-I will need to create two yellow gradient boxes above eachother.
+I will need to create two yellow gradient boxes next to eachother
+I will need to create a flexbox so that when the page is made smaller the boxes fit
 
 <!-- JAVASCRIPT -->
-I will need to create an empty word bank that fills up when user types in letter
-I will need to create a timer that counts down from 10 seconds 
+I will need to create an empty word bank that fills up when user types in letter using an array
+I will need to create a timer that counts down from 10 seconds using set interval
+If there is a correct character used it will replace the underscore using event listener - key down
 I will need to create a scoreboard that persists.
 I will need to create a reset score button that clears the scoreboard.
 I will need to create a GAME OVER text pop up when timer is done.
