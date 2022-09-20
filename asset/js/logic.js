@@ -1,4 +1,4 @@
-var questions = [
+var quizQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
@@ -42,10 +42,17 @@ startButton.addEventListener("click", startGame);
 // when start quiz is clicked, the page will dissapear
 function startGame(){
     containerEl[0].style.display = "none";
-    console.log(containerEl);
+//to display firstQuestion AFTER user clicks start quiz
+    getQuestion()
 }
 
 function getQuestion(){
-
+   var currentQuestion = quizQuestions[0];
+   var firstQuestion =  document.createElement("h2");
+   
+   firstQuestion.textContent = quizQuestions[0].question
+   questions.appendChild(firstQuestion);
 
 }
+
+
