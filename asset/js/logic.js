@@ -42,17 +42,48 @@ startButton.addEventListener("click", startGame);
 // when start quiz is clicked, the page will dissapear
 function startGame(){
     containerEl[0].style.display = "none";
+
 //to display firstQuestion AFTER user clicks start quiz
     getQuestion()
 }
 
+//to get the first question from the quizQuestion array
 function getQuestion(){
    var currentQuestion = quizQuestions[0];
-   var firstQuestion =  document.createElement("h2");
    
+//to show the text of the first question in quizQuestions on the screen and style it 
+   var firstQuestion =  document.createElement("h2");
    firstQuestion.textContent = quizQuestions[0].question
+   firstQuestion.setAttribute("style", "font-family:Arial, Helvetica, sans-serif");
    questions.appendChild(firstQuestion);
 
+
+//created ol so that the list will show as numbered instead of bullet points
+   var ol = document.createElement("ol");
+
+//to show the array of choices from first quizQuestions as a list 
+   for (var i=0; i < quizQuestions[0].choices.length; i++){
+
+//to show the text of the array of first choices in quizQuestions on the screen and style it 
+   var firstChoices=document.createElement("li");
+   firstChoices.classList.add("optionButton");
+   firstChoices.textContent = quizQuestions[0].choices[i]
+   firstChoices.setAttribute("style", "font-family:Arial, Helvetica, sans-serif");
+
+//append ol and li element together
+   ol.appendChild(firstChoices);
+   questions.appendChild(ol);
+
+// function to store when user CLICKS one of the answer choices
+    firstChoices.addEventListener("click", function(){
+        console.log("hi");
+
+   })
+
+}
 }
 
-
+// event.target
+// data*
+// data attribute in js
+// data attribute to revise from line 52 down to store data so i dont have to rewrite the fnction
