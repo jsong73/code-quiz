@@ -34,6 +34,8 @@ var startButton = document.getElementById("start-btn")
 var containerEl = document.getElementsByClassName("container")
 var timerEl = document.getElementsByClassName("timer")
 var questions = document.getElementById("questions")
+var choices = document.getElementById("choices")
+
 
 
 // click start button to start game
@@ -74,12 +76,14 @@ function getQuestion(){
    ol.appendChild(firstChoices);
    questions.appendChild(ol);
 
+
 // function to store when user CLICKS one of the answer choices
     firstChoices.addEventListener("click", function(){
-        console.log("hi");
-
+  
+    choices.textContent = "Correct!"
+    choices.setAttribute("style", "font-family:Arial, Helvetica, sans-serif; font-weight: bold");  
+    
    })
-
 }
 }
 
