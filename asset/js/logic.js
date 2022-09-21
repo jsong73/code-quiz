@@ -37,7 +37,6 @@ var questions = document.getElementById("questions")
 var choices = document.getElementById("choices")
 
 
-
 // click start button to start game
 startButton.addEventListener("click", startGame);
 
@@ -79,9 +78,8 @@ function getQuestion(){
 
 // function to store when user CLICKS one of the answer choices
     firstChoices.addEventListener("click", function(){
-  
     choices.textContent = "Correct!"
-    choices.setAttribute("style", "font-family:Arial, Helvetica, sans-serif; font-weight: bold");  
+    choices.setAttribute("style", "font-family:Arial, Helvetica, sans-serif; font-weight: bold; color: grey; font-size: 20px");  
     
    })
 }
