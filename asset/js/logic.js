@@ -28,11 +28,12 @@ var quizQuestions = [
 
 //var to show quiz starting point
 var currentQuestionIndex = 0;
+var timeLeft = 75;
 
 //variables to reference DOM
 var startButton = document.getElementById("start-btn")
 var containerEl = document.getElementsByClassName("container")
-var timerEl = document.getElementsByClassName("timer")
+var timerEl = document.getElementById("timer")
 var questions = document.getElementById("questions")
 var choices = document.getElementById("choices")
 
@@ -46,6 +47,10 @@ function startGame(){
 
 //to display firstQuestion AFTER user clicks start quiz
     getQuestion()
+
+//starts timer countdown AFTER user clicks start quiz
+    countdown()
+
 }
 
 //to get the first question from the quizQuestion array
@@ -76,16 +81,26 @@ function getQuestion(){
    questions.appendChild(ol);
 
 
-// function to store when user CLICKS one of the answer choices
+// when user CLICKS one of the answer choices, text shows "Correct!"
     firstChoices.addEventListener("click", function(){
+//put if statement here
     choices.textContent = "Correct!"
     choices.setAttribute("style", "font-family:Arial, Helvetica, sans-serif; font-weight: bold; color: grey; font-size: 20px");  
-    
    })
+
 }
 }
 
+function countdown(){
+    var timeInterval = setInterval(function(){
+    timerEl.textContent = "Time: " + timeLeft--;     
+   if(timeLeft <= 1)
+    clearInterval(timeInterval);
+}, 1000);
+       
+
+}
 // event.target
 // data*
 // data attribute in js
-// data attribute to revise from line 52 down to store data so i dont have to rewrite the fnction
+// data attribute to revise from line 52 down to store data so i dont have to rewrite the function

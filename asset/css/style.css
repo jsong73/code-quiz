@@ -30,7 +30,7 @@ p{
     font-size: 18px;
 }
 
-.timer{
+#timer{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 1%;
