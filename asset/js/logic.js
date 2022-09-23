@@ -83,7 +83,7 @@ function getQuestion(){
 
 // when user CLICKS one of the answer choices, text shows "Correct!"
     firstChoices.addEventListener("click", function(){
-//put if statement here
+    if (quizQuestions[0].answers === "alerts") 
     choices.textContent = "Correct!"
     choices.setAttribute("style", "font-family:Arial, Helvetica, sans-serif; font-weight: bold; color: grey; font-size: 20px");  
    })
