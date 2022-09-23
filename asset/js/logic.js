@@ -48,8 +48,8 @@ var feedbackEl = document.getElementById('feedback');
         var choice = currentQuestion.choices[i];
         var choiceNode = document.createElement("button");
     
-        //setting the button element to a class of hide in CSS = .hide{ display: none} in CSS 
-        choiceNode.setAttribute("class", "hide");
+        //setting the button element to a class of choice in CSS = .hide{ display: none} in CSS 
+        choiceNode.setAttribute("class", "choice");
         //setting the button element to a value of the variable choice
         choiceNode.setAttribute("value", choice);
 
