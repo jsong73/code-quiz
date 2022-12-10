@@ -1,7 +1,7 @@
 Code-quiz
 Code quiz is a website built to render questions about the basics of JavaScript. Users will be provided with multiple-choice answers and have a time limit. The quiz will generate a score based on the user's data and append the user's score to a scoreboard. This application was built solely using HTML, CSS, and Javascript.
 
-image.png
+![code-quiz](https://user-images.githubusercontent.com/111620893/206830765-05e8385d-09b6-42a0-ac14-eeda35055b4a.png)
 
 Features
 o A ‘Start Quiz’ button. 
