@@ -14,6 +14,7 @@ o A ‘Submit’ button
 o A ‘Highscore’ page that saves initials and score to local storage. 
 o A ‘Clear Highscores’ button to clear data from local storage.
 o A ‘Go back’ button that leads back to the initial quiz home page.
+  
 Features  
 o	A ‘Start Quiz’ button.  
 o	A timer decreasing in 1-second intervals starting at 75 seconds.  
